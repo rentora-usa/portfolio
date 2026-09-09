@@ -418,6 +418,20 @@ a:hover { color: var(--gold); }
   border-style: solid;
   border-color: var(--leaf);
   color: var(--paper);
+
+  a.slot {
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  a.slot:hover,
+  a.slot:focus-visible {
+    border-color: var(--gold);
+    background: #171142;
+  }
+  
+  a.slot:hover b { color: var(--gold); }
 }
 
 .btn {
