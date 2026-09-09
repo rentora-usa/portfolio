@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>English Quest — Jonny's Portfolio</title>
+<meta name="description" content="A quarter-by-quarter English portfolio, built as an 8-bit adventure.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8' shape-rendering='crispEdges'%3E%3Crect width='8' height='8' fill='%2316123a'/%3E%3Crect x='2' y='1' width='4' height='6' fill='%23ffcb3d'/%3E%3Crect x='1' y='2' width='6' height='4' fill='%23ffcb3d'/%3E%3Crect x='3' y='3' width='2' height='2' fill='%23a8801f'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="hud">
+  <a class="hud__brand" href="index.html">&#9632; ENGLISH QUEST</a>
+  <span class="hud__score ui">SCORE <b data-score>000000</b></span>
+  <span class="xp">
+    <span>XP</span>
+    <span class="xp__track"><span class="xp__fill" data-xp-fill></span></span>
+    <span data-xp-label>0/5</span>
+  </span>
+  <button class="soundtoggle" type="button" data-sound aria-pressed="false">SFX off</button>
+  <nav aria-label="Main">
+    <a href="index.html" aria-current="page">Map</a>
+    <a href="quarter-1.html">Q1</a>
+    <a href="sports.html">Sports</a>
+    <a href="coding.html">Coding</a>
+    <a href="journal.html">Journal</a>
+    <a href="room-218.html">Room 218</a>
+  </nav>
+</header>
+
+<main class="wrap">
+
+  <section class="title">
+    <h1 class="title__logo">ENGLISH<br>QUEST</h1>
+    <p class="title__sub">Jonny&rsquo;s portfolio &mdash; four quarters, one save file</p>
+
+    <svg class="hero-sprite hero-sprite--bob" viewBox="0 0 16 16" shape-rendering="crispEdges" role="img" aria-label="Pixel character holding a pencil">
+      <g fill="#6b3fa0">
+        <rect x="5" y="2" width="6" height="1"/><rect x="4" y="3" width="8" height="1"/>
+        <rect x="4" y="4" width="2" height="2"/><rect x="10" y="4" width="2" height="2"/>
+      </g>
+      <g fill="#ffcda8">
+        <rect x="6" y="4" width="4" height="1"/><rect x="5" y="5" width="6" height="1"/>
+        <rect x="5" y="6" width="6" height="1"/>
+      </g>
+      <g fill="#16123a">
+        <rect x="6" y="5" width="1" height="1"/><rect x="9" y="5" width="1" height="1"/>
+        <rect x="7" y="6" width="2" height="1"/>
+      </g>
+      <g fill="#47e0d4">
+        <rect x="5" y="7" width="6" height="1"/><rect x="4" y="8" width="8" height="2"/>
+        <rect x="5" y="10" width="6" height="1"/>
+      </g>
+      <g fill="#ffcda8">
+        <rect x="3" y="8" width="1" height="2"/><rect x="12" y="8" width="1" height="2"/>
+      </g>
+      <rect x="13" y="5" width="1" height="4" fill="#ffcb3d"/>
+      <rect x="13" y="4" width="1" height="1" fill="#ff4f8b"/>
+      <g fill="#4a5bd8">
+        <rect x="5" y="11" width="2" height="3"/><rect x="9" y="11" width="2" height="3"/>
+      </g>
+      <g fill="#5ede6c">
+        <rect x="4" y="14" width="3" height="1"/><rect x="9" y="14" width="3" height="1"/>
+      </g>
+    </svg>
+
+    <p class="title__sub"><span class="blink">&#9654;</span> Select a level to begin</p>
+  </section>
+
+  <section class="map" aria-labelledby="levels-h">
+    <h2 id="levels-h" class="ui">Overworld</h2>
+    <p>Each quarter is a level. Clear every stage in a quarter to unlock the next one. Quarter&nbsp;1 is live now &mdash; the rest are still being built.</p>
+
+    <div class="map__grid">
+
+      <a class="node" href="quarter-1.html" data-level="q1">
+        <svg class="node__icon" viewBox="0 0 16 16" shape-rendering="crispEdges" aria-hidden="true">
+          <rect x="3" y="1" width="10" height="14" fill="#f2f0ff"/>
+          <rect x="3" y="1" width="10" height="2" fill="#ffcb3d"/>
+          <g fill="#221a4a">
+            <rect x="5" y="5" width="6" height="1"/><rect x="5" y="7" width="6" height="1"/>
+            <rect x="5" y="9" width="4" height="1"/><rect x="5" y="11" width="5" height="1"/>
+          </g>
+        </svg>
+        <p class="node__num ui">Level 1</p>
+        <p class="node__name">Quarter 1</p>
+        <p class="node__status ui">Open</p>
+      </a>
+
+      <a class="node" href="quarter-2.html" data-level="q2" data-requires="q1">
+        <svg class="node__icon" viewBox="0 0 16 16" shape-rendering="crispEdges" aria-hidden="true">
+          <rect x="5" y="2" width="6" height="1" fill="#a79ddb"/>
+          <rect x="4" y="3" width="1" height="4" fill="#a79ddb"/>
+          <rect x="11" y="3" width="1" height="4" fill="#a79ddb"/>
+          <rect x="3" y="7" width="10" height="7" fill="#3b2f6e"/>
+          <rect x="3" y="7" width="10" height="1" fill="#5a4a9e"/>
+          <rect x="7" y="9" width="2" height="3" fill="#16123a"/>
+        </svg>
+        <p class="node__num ui">Level 2</p>
+        <p class="node__name">Quarter 2</p>
+        <p class="node__status ui">Locked</p>
+      </a>
+
+      <a class="node" href="quarter-3.html" data-level="q3" data-requires="q2">
+        <svg class="node__icon" viewBox="0 0 16 16" shape-rendering="crispEdges" aria-hidden="true">
+          <rect x="5" y="2" width="6" height="1" fill="#a79ddb"/>
+          <rect x="4" y="3" width="1" height="4" fill="#a79ddb"/>
+          <rect x="11" y="3" width="1" height="4" fill="#a79ddb"/>
+          <rect x="3" y="7" width="10" height="7" fill="#3b2f6e"/>
+          <rect x="3" y="7" width="10" height="1" fill="#5a4a9e"/>
+          <rect x="7" y="9" width="2" height="3" fill="#16123a"/>
+        </svg>
+        <p class="node__num ui">Level 3</p>
+        <p class="node__name">Quarter 3</p>
+        <p class="node__status ui">Locked</p>
+      </a>
+
+      <a class="node" href="quarter-4.html" data-level="q4" data-requires="q3">
+        <svg class="node__icon" viewBox="0 0 16 16" shape-rendering="crispEdges" aria-hidden="true">
+          <rect x="5" y="2" width="6" height="1" fill="#a79ddb"/>
+          <rect x="4" y="3" width="1" height="4" fill="#a79ddb"/>
+          <rect x="11" y="3" width="1" height="4" fill="#a79ddb"/>
+          <rect x="3" y="7" width="10" height="7" fill="#3b2f6e"/>
+          <rect x="3" y="7" width="10" height="1" fill="#5a4a9e"/>
+          <rect x="7" y="9" width="2" height="3" fill="#16123a"/>
+        </svg>
+        <p class="node__num ui">Level 4</p>
+        <p class="node__name">Quarter 4</p>
+        <p class="node__status ui">Locked</p>
+      </a>
+
+    </div>
+
+    <p class="ui" data-locked-note style="color:var(--pink);font-size:9px;margin-top:22px;min-height:2em;">Quarters 2&ndash;4 open as the year goes on.</p>
+  </section>
+
+  <section aria-labelledby="side-h" style="margin-top:44px;">
+    <h2 id="side-h" class="ui">Side quests</h2>
+    <p>Everything outside the quarter grind.</p>
+
+    <div class="quests">
+      <a class="quest" href="sports.html">
+        <strong>Sports</strong>
+        <span>Seasons, stats, and what playing has taught me about showing up.</span>
+      </a>
+      <a class="quest" href="coding.html">
+        <strong>Coding</strong>
+        <span>Projects I build outside class, including this site.</span>
+      </a>
+      <a class="quest" href="journal.html">
+        <strong>Journal</strong>
+        <span>Penzu entry titles, five sessions a week.</span>
+      </a>
+      <a class="quest" href="room-218.html">
+        <strong>Heard in Room 218</strong>
+        <span>Lines worth writing down before they disappear.</span>
+      </a>
+    </div>
+  </section>
+
+  <section class="panel" style="margin-top:44px;">
+    <h2 class="ui">How this portfolio is scored</h2>
+    <table>
+      <thead>
+        <tr><th>Category</th><th>Points</th><th>Where it lives</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Formal &amp; informal writing</td><td>60</td><td><a href="quarter-1.html#formal">Stage 1&ndash;2</a></td></tr>
+        <tr><td>Separation / learning curve</td><td>40</td><td><a href="quarter-1.html#stretch">Stage 4</a></td></tr>
+        <tr><td>Keeping things sharp</td><td>Deduction only</td><td><a href="quarter-1.html#sharp">Stage 3</a></td></tr>
+      </tbody>
+    </table>
+    <button class="btn" type="button" data-reset>Erase save file</button>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <svg class="coin" viewBox="0 0 8 8" shape-rendering="crispEdges" aria-hidden="true">
+    <rect x="2" y="0" width="4" height="8" fill="#ffcb3d"/>
+    <rect x="1" y="1" width="6" height="6" fill="#ffcb3d"/>
+    <rect x="3" y="2" width="2" height="4" fill="#a8801f"/>
+  </svg>
+  Built from scratch in HTML, CSS, and JavaScript.
+</footer>
+
+<script src="js/game.js"></script>
+</body>
+</html>
